@@ -1,0 +1,43 @@
+# Awesome CLI Tools
+
+> An AI-curated list of awesome command-line tools, automatically updated weekly.
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+This list is maintained by an automated pipeline that discovers trending CLI tools,
+scores them algorithmically, and evaluates them with AI. [Learn how it works →](CONTRIBUTING.md)
+
+## Contents
+{% for cat in categories %}
+{% if tools_by_category.get(cat.id, []) -%}
+- [{{ cat.name }}](#{{ cat.id }})
+{% endif %}
+{%- endfor %}
+
+---
+{% for cat in categories %}
+{% set cat_tools = tools_by_category.get(cat.id, []) %}
+{% if cat_tools %}
+
+## {{ cat.name }}
+
+{{ cat.description }}
+
+| Tool | Description | Language | License | Stars |
+|------|-------------|----------|---------|-------|
+{% for tool in cat_tools -%}
+| [{{ tool.name }}]({{ tool.url }}) {{ "🔥" if tool.get("trending") else "" }} | {{ tool.description }} | `{{ tool.language }}` | `{{ tool.license }}` | {{ tool.stars_display }} |
+{% endfor %}
+{% endif %}
+{%- endfor %}
+
+---
+
+## Legend
+
+- 🔥 Trending — gained 500+ stars in the last month
+
+## About
+
+This list is automatically curated by an AI pipeline that runs weekly.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to submit tools manually.
