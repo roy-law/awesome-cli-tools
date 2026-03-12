@@ -18,6 +18,9 @@ dev = [
     "respx>=0.22",
 ]
 
+[tool.setuptools.packages.find]
+include = ["pipeline*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
