@@ -1,0 +1,59 @@
+- id: search
+  name: Search & Grep
+  description: Tools for searching files, text, and code
+
+- id: file-management
+  name: File Management
+  description: File managers, directory tools, and file operations
+
+- id: shell
+  name: Shell & Terminal
+  description: Shell frameworks, terminal emulators, and prompt customization
+
+- id: git
+  name: Git & Version Control
+  description: Git utilities, diff tools, and repository management
+
+- id: text-processing
+  name: Text Processing
+  description: Text manipulation, formatting, and conversion tools
+
+- id: networking
+  name: Networking
+  description: HTTP clients, network diagnostics, and API tools
+
+- id: system
+  name: System & Monitoring
+  description: System info, process management, and monitoring
+
+- id: dev-tools
+  name: Development Tools
+  description: Build tools, linters, formatters, and development utilities
+
+- id: productivity
+  name: Productivity
+  description: Task management, notes, time tracking, and workflow tools
+
+- id: data
+  name: Data & JSON
+  description: JSON/CSV/YAML processing and data manipulation
+
+- id: media
+  name: Media & Images
+  description: Image, video, and audio tools for the terminal
+
+- id: security
+  name: Security
+  description: Security scanning, encryption, and password management
+
+- id: containers
+  name: Containers & Cloud
+  description: Docker, Kubernetes, and cloud CLI tools
+
+- id: ai
+  name: AI & LLM
+  description: AI-powered CLI tools and LLM interfaces
+
+- id: misc
+  name: Miscellaneous
+  description: Tools that don't fit other categories

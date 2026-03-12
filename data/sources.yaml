@@ -1,0 +1,42 @@
+scoring:
+  min_stars: 50
+  min_quality_score: 6
+  trending_threshold: 500
+  max_inactive_days: 180
+
+sources:
+  github_topics:
+    enabled: true
+    topics:
+      - cli
+      - command-line
+      - terminal
+      - tui
+      - command-line-tool
+    per_topic_limit: 100
+
+  github_trending:
+    enabled: true
+    languages:
+      - ""
+      - rust
+      - go
+      - python
+      - typescript
+
+  hackernews:
+    enabled: false
+    min_points: 50
+
+  reddit:
+    enabled: false
+    subreddits:
+      - commandline
+      - cli
+      - terminal
+
+  awesome_lists:
+    enabled: false
+    lists:
+      - alebcay/awesome-shell
+      - agarrharr/awesome-cli-apps
