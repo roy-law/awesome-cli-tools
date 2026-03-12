@@ -1,4 +1,223 @@
 # Awesome CLI Tools — Source of Truth
 # This file is managed by the discovery pipeline.
 # Manual additions welcome via PR.
-[]
+
+- name: ripgrep
+  repo: BurntSushi/ripgrep
+  url: https://github.com/BurntSushi/ripgrep
+  description: Fast recursive grep alternative written in Rust
+  category: search
+  language: Rust
+  license: Unlicense/MIT
+  stars: 49000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: fd
+  repo: sharkdp/fd
+  url: https://github.com/sharkdp/fd
+  description: Simple, fast alternative to find written in Rust
+  category: search
+  language: Rust
+  license: Apache-2.0/MIT
+  stars: 34000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: bat
+  repo: sharkdp/bat
+  url: https://github.com/sharkdp/bat
+  description: A cat clone with syntax highlighting and Git integration
+  category: file-management
+  language: Rust
+  license: Apache-2.0/MIT
+  stars: 50000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: eza
+  repo: eza-community/eza
+  url: https://github.com/eza-community/eza
+  description: Modern replacement for ls with colors and Git integration
+  category: file-management
+  language: Rust
+  license: MIT
+  stars: 12000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: fzf
+  repo: junegunn/fzf
+  url: https://github.com/junegunn/fzf
+  description: General-purpose command-line fuzzy finder
+  category: productivity
+  language: Go
+  license: MIT
+  stars: 66000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: zoxide
+  repo: ajeetdsouza/zoxide
+  url: https://github.com/ajeetdsouza/zoxide
+  description: Smarter cd command that learns your habits
+  category: shell
+  language: Rust
+  license: MIT
+  stars: 23000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: starship
+  repo: starship/starship
+  url: https://github.com/starship/starship
+  description: Minimal, fast, and customizable cross-shell prompt
+  category: shell
+  language: Rust
+  license: ISC
+  stars: 46000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: jq
+  repo: jqlang/jq
+  url: https://github.com/jqlang/jq
+  description: Lightweight and flexible command-line JSON processor
+  category: data
+  language: C
+  license: MIT
+  stars: 30000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: yq
+  repo: mikefarah/yq
+  url: https://github.com/mikefarah/yq
+  description: Portable command-line YAML, JSON, and XML processor
+  category: data
+  language: Go
+  license: MIT
+  stars: 12000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: httpie
+  repo: httpie/cli
+  url: https://github.com/httpie/cli
+  description: Human-friendly HTTP client for the API era
+  category: networking
+  language: Python
+  license: BSD-3-Clause
+  stars: 34000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: lazygit
+  repo: jesseduffield/lazygit
+  url: https://github.com/jesseduffield/lazygit
+  description: Simple terminal UI for git commands
+  category: git
+  language: Go
+  license: MIT
+  stars: 53000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: delta
+  repo: dandavison/delta
+  url: https://github.com/dandavison/delta
+  description: Syntax-highlighting pager for git, diff, and grep output
+  category: git
+  language: Rust
+  license: MIT
+  stars: 24000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: dust
+  repo: bootandy/dust
+  url: https://github.com/bootandy/dust
+  description: More intuitive version of du written in Rust
+  category: system
+  language: Rust
+  license: Apache-2.0
+  stars: 9000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: bottom
+  repo: ClementTsang/bottom
+  url: https://github.com/ClementTsang/bottom
+  description: Graphical cross-platform process and system monitor
+  category: system
+  language: Rust
+  license: MIT
+  stars: 10000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: hyperfine
+  repo: sharkdp/hyperfine
+  url: https://github.com/sharkdp/hyperfine
+  description: Command-line benchmarking tool with warmup and statistical analysis
+  category: dev-tools
+  language: Rust
+  license: Apache-2.0/MIT
+  stars: 22000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: tokei
+  repo: XAMPPRocky/tokei
+  url: https://github.com/XAMPPRocky/tokei
+  description: Count lines of code quickly and accurately
+  category: dev-tools
+  language: Rust
+  license: Apache-2.0/MIT
+  stars: 11000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: tldr
+  repo: tldr-pages/tldr
+  url: https://github.com/tldr-pages/tldr
+  description: Collaborative cheatsheets for console commands
+  category: productivity
+  language: Markdown
+  license: CC-BY-4.0
+  stars: 51000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: atuin
+  repo: atuinsh/atuin
+  url: https://github.com/atuinsh/atuin
+  description: Magical shell history with sync and search
+  category: shell
+  language: Rust
+  license: MIT
+  stars: 21000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: nushell
+  repo: nushell/nushell
+  url: https://github.com/nushell/nushell
+  description: Modern shell that treats data as structured tables
+  category: shell
+  language: Rust
+  license: MIT
+  stars: 33000
+  added_date: "2026-03-11"
+  discovered_by: seed
+
+- name: curlie
+  repo: rs/curlie
+  url: https://github.com/rs/curlie
+  description: Frontend to curl that adds httpie-like ease of use
+  category: networking
+  language: Go
+  license: MIT
+  stars: 3000
+  added_date: "2026-03-11"
+  discovered_by: seed
