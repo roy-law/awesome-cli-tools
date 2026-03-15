@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC
 
 import pytest
 
@@ -12,7 +12,7 @@ def _make_repo(
     archived: bool = False,
     fork: bool = False,
 ) -> GitHubRepo:
-    pushed = (datetime.utcnow() - timedelta(days=pushed_days_ago)).strftime(
+    pushed = (datetime.now(UTC) - timedelta(days=pushed_days_ago)).strftime(
         "%Y-%m-%dT%H:%M:%SZ"
     )
     return GitHubRepo(

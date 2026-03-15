@@ -2,7 +2,7 @@
 
 import math
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC
 
 from pipeline.sources.github_topics import GitHubRepo
 
@@ -40,7 +40,7 @@ def filter_candidates(
     max_inactive_days: int = 180,
 ) -> list[ScoredRepo]:
     """Filter and score repos, rejecting those below thresholds."""
-    now = datetime.utcnow()
+    now = datetime.now(UTC)
     cutoff = now - timedelta(days=max_inactive_days)
     results: list[ScoredRepo] = []
 
@@ -50,7 +50,7 @@ def filter_candidates(
 
         try:
             pushed = datetime.fromisoformat(repo.pushed_at.replace("Z", "+00:00"))
-            if pushed.replace(tzinfo=None) < cutoff:
+            if pushed < cutoff:
                 continue
         except (ValueError, AttributeError):
             continue

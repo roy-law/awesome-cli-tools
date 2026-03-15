@@ -1,7 +1,7 @@
 """Gate 3: Create a GitHub PR with proposed tool additions."""
 
 import subprocess
-from datetime import datetime
+from datetime import datetime, UTC
 
 from pipeline.evaluate import EvalResult
 
@@ -11,7 +11,7 @@ def build_pr_body(tools: list[dict], evals: list[EvalResult]) -> str:
     lines = [
         f"## 🤖 Auto-discovery: {len(tools)} new tool(s)",
         "",
-        f"Discovered on {datetime.utcnow().strftime('%Y-%m-%d')} by the weekly pipeline.",
+        f"Discovered on {datetime.now(UTC).strftime('%Y-%m-%d')} by the weekly pipeline.",
         "",
         "### Proposed additions",
         "",
@@ -41,7 +41,7 @@ def create_pr(
 
     Returns the PR URL, or None if dry_run.
     """
-    date_str = datetime.utcnow().strftime("%Y-%m-%d")
+    date_str = datetime.now(UTC).strftime("%Y-%m-%d")
     branch_name = branch_name or f"auto-discover/{date_str}"
     title = f"🤖 Add {len(tools)} new CLI tool(s) — {date_str}"
     body = build_pr_body(tools, evals)
