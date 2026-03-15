@@ -39,6 +39,7 @@ async def test_evaluate_repo_accept():
         existing_descriptions=[],
         categories=["search", "file-management", "shell"],
         llm=mock_llm,
+        readme="# bat\nA cat(1) clone with syntax highlighting.",
     )
     assert result.accepted is True
     assert result.category == "file-management"
@@ -62,6 +63,7 @@ async def test_evaluate_repo_reject_low_quality():
         existing_descriptions=[],
         categories=["misc"],
         llm=mock_llm,
+        readme="# some tool",
     )
     assert result.accepted is False
 
@@ -83,5 +85,6 @@ async def test_evaluate_repo_reject_not_cli():
         existing_descriptions=[],
         categories=["misc"],
         llm=mock_llm,
+        readme="# some tool",
     )
     assert result.accepted is False
