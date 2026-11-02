@@ -221,3 +221,14 @@
   stars: 3000
   added_date: "2026-03-11"
   discovered_by: seed
+
+- name: Kilobat CLI
+  repo: seifip/kilobat-cli
+  url: https://github.com/seifip/kilobat-cli
+  description: "macOS network diagnostics and local stdio MCP; macOS 14+ and Xcode 16+ source build"
+  category: networking
+  language: Swift
+  license: GPL-3.0-only
+  stars: 1
+  added_date: "2026-11-02"
+  discovered_by: manual
